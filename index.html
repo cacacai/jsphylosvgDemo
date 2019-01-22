@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/jsphylosvg.js"></script>
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    //     	$(document).ready(function(){
+	// 	$.get("coffee.xml", function(data) {
+	// 		var dataObject = {
+	// 			xml: data,
+	// 			fileSource: true
+	// 		};		
+	// 		phylocanvas = new Smits.PhyloCanvas(
+	// 			dataObject,
+	// 			'svgCanvas', 
+	// 			800, 800,
+	// 			'circular'
+	// 		);
+	// 	});
+	// });
+ 	window.onload = function(){
+         
+// phylocanvas = new Smits.PhyloCanvas(
+// 	{ 
+// 		newick: '(((Espresso:2,(Milk Foam:2,Espresso Macchiato:5,((Steamed Milk:2,Cappuccino:2,(Whipped Cream:1,Chocolate Syrup:1,Cafe Mocha:3):5):5,Flat White:2):5):5):1,Coffee arabica:0.1,(Columbian:1.5,((Medium Roast:1,Viennese Roast:3,American Roast:5,Instant Coffee:9):2,Heavy Roast:0.1,French Roast:0.2,European Roast:1):5,Brazilian:0.1):1):1,Americano:10,Water:1);' 
+// 	},
+// 	'svgCanvas', 
+// 	800, 800
+// );			
+        
+		var dataObject = { newick: '(((Espresso:2,(Milk Foam:2,Espresso Macchiato:5,((Steamed Milk:2,Cappuccino:2,(Whipped Cream:1,Chocolate Syrup:1,Cafe Mocha:3):5):5,Flat White:2):5):5):1,Coffee arabica:0.1,(Columbian:1.5,((Medium Roast:1,Viennese Roast:3,American Roast:5,Instant Coffee:9):2,Heavy Roast:0.1,French Roast:0.2,European Roast:1):5,Brazilian:0.1):1):1,Americano:10,Water:1);' };
+			phylocanvas = new Smits.PhyloCanvas(
+				dataObject,
+				'svgCanvas', 
+                500, 500,
+                'circular'
+        	);
+       
+	};
+	</script>
+</head>
+<body>
+	<div id="svgCanvas"> </div>
+</body>
+    
+</html>
